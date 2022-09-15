@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP SCRIPT -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+
+    <!--############# SMOOTH SCROLLING JAVASCRIPT #############-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+
+    </script>
+
+    <!-- Bootstrap 5 CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- FAVICON -->
+    <link rel="icon" href="./images/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+
+    <!-- JS LINK -->
+    <script src="./main.js" defer></script>
+
+    <title>Document</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="85">
+
+    <!-- NAVBAR -->
+
+
+    <header class="header_wrapper">
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="#home">
+                    <img src="images/logo.png" class="img-fluid" alt="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fa-solid fa-bars-staggered"></i>
+
+                </button>
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="main-btn" href="#">Free Quote</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- BANNER -->
+
+    <section class="banner_wrapper" id="home">
+
+        <div class="container">
+
+            <div class="row align-items-center flex-md-row-reverse">
+                <div class="col-md-6">
+                    <img src="./images/hero_img.png" class="img-fluid" alt="banner">
+                </div>
+
+                <div class="col-md-6 my-5 my-md-0 text-center text-md-start">
+                    <h1>Get More For <br />Your Money.</h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type and scrambled it to make a type specimen book.
+                    </p>
+
+                    <div class="mt-4">
+                        <a href="#about" class="main-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ABOUT -->
+
+    <section class="about_wrapper" id="about">
+
+        <div class="container">
+
+            <div class="row align-items-center justify-content-between">
+
+                <div class="col-md-6 col-sm-12 mb-4 mb-mb-0">
+                    <img src="./images/about-img.png" class="img-fluid" alt="about">
+                </div>
+
+                <div class="col-md-6 col-sm-12 ps-md-5 text-center text-md-start">
+                    <h2>
+                        How do you get top<br>ranks in SEO?
+                    </h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quod explicabo cum rerum incidunt
+                        doloremque!
+                    </p>
+
+                    <div class="mt-4">
+                        <a href="#services" class="main-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+    <!-- SERVICES -->
+
+    <section class="services_wrapper" id="services">
+
+        <div class="container">
+
+            <div class="row pb-5">
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+
+                    <!-- CARD-1 -->
+                    <div class="card py-4 border-0 rounded-3 text-center">
+                        <div class="card-body">
+                            <img src="./images/service/icon-1.png" class="img-fluid mb-4" alt="icon-1">
+                            <h3>Use keywords</h3>
+                            <p>
+                                Keywords play a major role in this formula. You want to include words people will search
+                                for
+                                throughout your content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+
+                    <!-- CARD-2 -->
+                    <div class="card py-4 border-0 rounded-3 text-center">
+                        <div class="card-body">
+                            <img src="./images/service/icon-2.png" class="img-fluid mb-4" alt="icon-1">
+                            <h3>High quality content</h3>
+                            <p>
+                                To drive more traffic to your website and increase its popularity, you need to give
+                                visitors a reason to keep coming back.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-12 col-12 mb-4">
+                    <!-- CARD-3 -->
+                    <div class="card py-4 border-0 rounded-3 text-center">
+                        <div class="card-body">
+                            <img src="./images/service/icon-3.png" class="img-fluid mb-4" alt="icon-1">
+                            <h3>Diversify your links</h3>
+                            <p>
+                                There are a lot of different types of links you can get such as blog roll links,
+                                homepage links, links from blog posts, directory links...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- LISTED SERVICES -->
+
+            <div class="row">
+
+                <!-- CARD-1 -->
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body text-md-end">
+
+                            <!-- 1 -->
+                            <h3>Optimize images <span>01</span></h3>
+                            <p>Keywords play a major role in this formula. You want to include words people will search
+                                for throughout your content.</p>
+
+                            <!-- 2 -->
+                            <h3>Use outbound links <span>02</span></h3>
+                            <p>There are certain things you can do to increase the credibility of your website. You
+                                should also include internal links..</p>
+
+                            <!-- 3 -->
+                            <h3>Add more than text <span>03</span></h3>
+                            <p>There’s more you can add to improve your SEO ranking. Consider adding other multimedia
+                                elements such as videos,</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD-2 -->
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body text-center">
+                            <img src="./images/service/single-img-2-1.png" class="img-fluid service_phone " alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD-3 -->
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body text-start">
+
+                            <!-- 4 -->
+
+                            <h3><span>04</span> Start blogging </h3>
+                            <p>If you’re using authority websites for hyperlinks, you shouldn’t have to worry about the
+                                links breaking.</p>
+
+                            <!-- 5 -->
+
+                            <h3><span>05</span> Fix any broken links </h3>
+                            <p>There are certain things you can do to increase the credibility of your website. You
+                                should also include internal links..</p>
+
+                            <!-- 6 -->
+
+                            <h3><span>06</span> Click-worthy title </h3>
+                            <p>When it comes to writing titles for search engines, the thing you have to know is you
+                                only have 65 characters to write headline.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- BLOG -->
+    <section class="blog_wrapper" id="blog">
+
+        <div class="newsletter_wrapper">
+
+            <div class="container ">
+
+                <div class="row py-5 align-items-center">
+
+                    <div class="col-sm-12 text-center">
+                        <h2 class="text-white mb-4">Have questions in mind? <br class="d-none d-lg-block">Let us help
+                            you.</h2>
+
+                        <form class="d-flex newsletter">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                            <button type="submit" class="main-btn ms-3">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container">
+            <div class="row py-5">
+
+                <div class="col-sm-12 text-center">
+                    <h2>Latest from our blog </h2>
+                    <p class="w-75 mx-auto ">In this guide, we’re going to share the essential SEO ranking factors
+                        you
+                        need to dominate search. By the end of this post, you’ll have a well-optimized site</p>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="row">
+
+                <!-- CARD-1 -->
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+
+                    <div class="card bg-white border-0 rounded-0">
+                        <img src="./images/Blog/blog-img-1.jpg" class="img-fluid mb-4" alt="">
+
+                        <div class="card-body d-flex">
+                            <div class="me-4">
+                                <h3 class="date mb-0">06</h3>
+                                <p>SEP</p>
+                            </div>
+
+                            <div>
+                                <h3><a href="">Brilliant minds.</a></h3>
+
+                                <p>Keywords play a major role in this formula. You want to include words people will
+                                    search for throughout your content.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD-2 -->
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="card bg-white border-0 rounded-0">
+                        <img src="./images/Blog/blog-img-2.jpg" class="img-fluid mb-4" alt="">
+
+                        <div class="card-body d-flex">
+                            <div class="me-4">
+                                <h3 class="date mb-0">06</h3>
+                                <p>SEP</p>
+                            </div>
+
+
+                            <div>
+                                <h3><a href="">Brilliant minds</a></h3>
+                                <p>Keywords play a major role in this formula. You want to include words people will
+                                    search for throughout your content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD-3 -->
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+
+                    <div class="card bg-white border-0 rounded-0">
+
+                        <img src="./images/Blog/blog-img-3.jpg" class="img-fluid mb-4" alt="">
+
+                        <div class="card-body d-flex">
+
+                            <div class="me-4">
+                                <h3 class="date mb-0">06</h3>
+                                <p>SEP</p>
+                            </div>
+                            <div>
+                                <h3><a href="">Brilliant minds</a></h3>
+                                <p>Keywords play a major role in this formula. You want to include words people will
+                                    search for throughout your content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+
+    <section class="contact_wrapper" id="contact">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+
+                <!-- IMAGE -->
+                <div class="col-md-6 col-12 mb-5 mb-md-0">
+                    <img src="./images/contact.png" class="img-fluid" alt="">
+                </div>
+
+                <!-- FORM -->
+                <div class="col-md-6 col-12 ps-md-5">
+                    <h2>Get In Touch</h2>
+
+                    <form>
+                        <!-- NAME -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Write your Name"
+                                aria-describedby="emailHelp" autocomplete="off">
+
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Id</label>
+                            <input type="email" class="form-control" id="name" placeholder="Write Your Email Id"
+                                autocomplete="off">
+                        </div>
+
+                        <!-- MESSAGE -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <input cols="40" rows="4" class="form-control" placeholder="Write a Message..." id="message"
+                                autocomplete="off">
+                        </div>
+
+
+
+                        <button type="submit" class="main-btn border-0 mt-3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <section id="footer" class="footer_wrapper">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-8">
+                    <ul
+                        class="list-unstyled d-flex flex-column flex-md-row justify-content-start justify-content-md-around">
+
+                        <li class="mb-3 mb-md-0">
+                            <a href="#"><i class="fas fa-phone-alt me-1"></i> +91-12457812585</a>
+                        </li>
+                        <li class="mb-3 mb-md-0">
+                            <a href="#"><i class="fas fa-envelope me-1"></i> info@example.com</a>
+                        </li>
+                        <li class="mb-3 mb-md-0">
+                            <a href="#"><i class="fas fa-map-marker-alt me-1"></i> 184 Main South Street MP 120120</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- SOCIAL MEDIA ICON -->
+
+                <div class="col-xl-4">
+
+                    <ul class="list-unstyled d-flex  justify-content-sm-center justify-content-xl-end">
+                        <li>
+                            <a href="#"><i class="fab fa-instagram me-3"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-square me-3"></i> </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter-square me-3"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>
